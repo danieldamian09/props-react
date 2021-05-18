@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Button = () => {
+const Button = ({cambiarContador, contador}) => {
 
   return(
     <div>
-      <p>Me has Clickeado: 0 </p>
-      <button>Click Me</button>
+      <p>Me has Clickeado: {contador} </p>
+      <button onClick={ () => cambiarContador(contador + 1)}>Click Me</button>
     </div>
   )
 
